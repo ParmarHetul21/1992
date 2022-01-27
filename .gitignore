@@ -13,6 +13,8 @@ dist/
 # Compiled Python bytecode
 *.py[cod]
 
+.vscode
+
 # Log files
 *.log
 
