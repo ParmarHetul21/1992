@@ -10,7 +10,7 @@
 			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Assesment-1</title>
 	</head>
 	<body>
@@ -37,20 +37,82 @@
 					<p>Register</p>
 				</div>
 			</div>
-			<hr />
+
 			<div id="navbar">
 				<div>
 					<span id="title">1992</span>
 				</div>
 				<div id="action_link">
-					<a href="#" class="link_rm">HOME</a>
-					<a href="#" class="link_rm">BOY</a>
-					<a href="#" class="link_rm">GIRL</a>
-					<a href="#" class="link_rm">SALE</a>
-					<a href="#" class="link_rm">BLOG</a>
-					<a href="#" class="link_rm">PAGES</a>
-					<a href="#" class="link_rm">CONTACT</a>
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>HOME</a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>BOY</a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>GIRL</a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>SALE</a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>BLOG</a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/><select id="page" style="border: none">
+							<option value="volvo">PAGE</option>
+							<option value="saab">Page1</option>
+							<option value="mercedes">Page2</option>
+							<option value="audi">Page3</option>
+						</select></a
+					>
+
+					<a href="#" class="link_rm"
+						><img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="10px"
+							width="10px"
+						/>CONTACT</a
+					>
+
 					<button class="fas fa-search"></button>
+
 					<button
 						class="fas fa-shopping-cart"
 						id="shopping_cart_items"
@@ -61,50 +123,84 @@
 			</div>
 
 			<div id="img_container">
-				<button class="fas fa-arrow-left ltr"></button>
+				<button class="fas fa-arrow-left ltr">
+					<img
+						src="./assets/images/lines.png"
+						alt="Lines"
+						height="14px"
+						width="29px"
+						id="img_left_lines"
+					/>
+				</button>
 				<div id="align_container">
 					<span id="sale">SALE</span>
 					<span id="percentage_off">30% OFF</span>
-					<button id="shop_now">SHOP NOW</button>
+					<a href="" id="shop_now">SHOP NOW</a>
 					<div id="slider_footer">
 						<span id="ratios"><sup>3</sup>/<sub>5</sub></span>
 						<span id="end">SALE END SEASON</span>
 						<span id="season">FALL/WINTER 2014</span>
 					</div>
 				</div>
-				<button class="fas fa-arrow-right rtl"></button>
+				<button class="fas fa-arrow-right rtl">
+					<img
+						src="./assets/images/lines.png"
+						alt="Lines"
+						height="14px"
+						width="29px"
+						id="img_right_lines"
+					/>
+				</button>
 			</div>
 		</header>
 
 		<section>
 			<div id="header_category">
-				<div class="cards">
+				<a href="#" class="cards">
 					<div id="category_image"></div>
 					<div class="description">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+						/>
 						<div id="category_title">NEW T-SHIRT</div>
 						<div id="category_description">
 							It's always the summer time
 						</div>
 					</div>
-				</div>
-				<div class="cards">
+				</a>
+				<a href="" class="cards">
 					<div id="category_image"></div>
 					<div class="description">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+						/>
 						<div id="category_title">KID ACCESSORIES</div>
 						<div id="category_description">
 							Bowtie, cap, bag, shoes, glasses,...
 						</div>
 					</div>
-				</div>
-				<div class="cards">
+				</a>
+				<a href="" class="cards">
 					<div id="category_image">
 						<i class="far fa-play-circle"></i>
 					</div>
 					<div class="description">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+						/>
 						<div id="category_title">VIDEO CAMPAIGN</div>
 						<div id="category_description">S/S 2015 Collection</div>
 					</div>
-				</div>
+				</a>
 			</div>
 
 			<div id="header_content">
@@ -129,15 +225,22 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 						<span id="editor">EDITOR'S CHOICE</span>
 					</div>
 					<div id="section_info">
-						<div id="section_title">HOODED JACKET</div>
-						<div id="section_description">$ 29.90</div>
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
+						<a href="#" id="section_title">HOODED JACKET</a>
+						<a href="#" id="section_description">$ 29.90</a>
 					</div>
 				</div>
 				<div class="section_parition">
@@ -152,14 +255,21 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 					</div>
 					<div id="section_info">
-						<div id="section_title">Fine-knit cardigan</div>
-						<div id="section_description">$ 19.90</div>
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
+						<a href="" id="section_title">Fine-knit cardigan</a>
+						<a href="" id="section_description">$ 19.90</a>
 					</div>
 				</div>
 				<div class="section_parition">
@@ -174,15 +284,22 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 						<span id="exclusive">Exclusive</span>
 					</div>
 					<div id="section_info">
-						<div id="section_title">Light pink Parka</div>
-						<div id="section_description">$ 49.90</div>
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
+						<a href="" id="section_title">Light pink Parka</a>
+						<a href="" id="section_description">$ 49.90</a>
 					</div>
 				</div>
 				<div class="section_parition">
@@ -197,46 +314,53 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 					</div>
 					<div id="section_info">
-						<div id="section_title">Denim dress</div>
-						<div id="section_description">$ 29.90</div>
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
+						<a href="" id="section_title">Denim dress</a>
+						<a hre id="section_description">$ 29.90</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="grid-container">
-				<div id="item1">
+				<a href="" id="item1">
 					<span class="item_block">Denim</span>
 					<span class="item_block_italic">Trends of season</span>
-				</div>
-				<div id="item2">
+				</a>
+				<a href="" id="item2">
 					<i
 						class="fas fa-play-circle"
 						style="color: grey; font-size: 44px"
 					></i>
-				</div>
-				<div id="item3">
+				</a>
+				<a href="" id="item3">
 					<span class="item_block"><span>Accessories</span></span>
 					<span class="item_block_italic"
 						>Style hard, style harder</span
 					>
-				</div>
-				<div id="item4">
+				</a>
+				<a href="" id="item4">
 					<span class="item_block">Shoes</span>
 					<span class="item_block_italic">New Shoes For Springs</span>
-				</div>
-				<div id="item5">
+				</a>
+				<a href="" id="item5">
 					<span class="item_block size_sg">T-Shirts & VESTS</span>
 					<span class="item_block_italic size_bg">Under $ 25</span>
 					<span id="round_arrow">
 						<i class="far fa-angle-double-right"></i>
 					</span>
-				</div>
+				</a>
 			</div>
 
 			<div id="header_content">
@@ -252,7 +376,7 @@
 
 			<div id="sections">
 				<div class="section_parition">
-					<div id="section_img">
+					<a href="" id="section_img">
 						<div id="actions_hide">
 							<div class="section_actions">
 								<i class="far fa-shopping-cart"></i>
@@ -263,18 +387,25 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-					</div>
-					<div id="section_info">
+					</a>
+					<a href="" id="section_info">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
 						<div id="section_title">HOODED JACKET</div>
 						<div id="section_description">$ 29.90</div>
-					</div>
+					</a>
 				</div>
 				<div class="section_parition">
-					<div id="section_img">
+					<a href="" id="section_img">
 						<div id="actions_hide">
 							<div class="section_actions">
 								<i class="far fa-shopping-cart"></i>
@@ -285,20 +416,27 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 						<span id="sales_off">SALES OFF</span>
-					</div>
-					<div id="section_info">
+					</a>
+					<a href="" id="section_info">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
 						<div id="section_title">NY.C Sweatshirt</div>
 						<div id="section_description">$ 35.90 $ 14.90</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="section_parition">
-					<div id="section_img">
+					<a href="" id="section_img">
 						<div id="actions_hide">
 							<div class="section_actions">
 								<i class="far fa-shopping-cart"></i>
@@ -309,20 +447,27 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
 						<span id="new">new</span>
-					</div>
-					<div id="section_info">
+					</a>
+					<a href="" id="section_info">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
 						<div id="section_title">BATMEN T-SHIRT</div>
 						<div id="section_description">$ 35.90</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="section_parition">
-					<div id="section_img">
+					<a href="" id="section_img">
 						<div id="actions_hide">
 							<div class="section_actions">
 								<i class="far fa-shopping-cart"></i>
@@ -333,15 +478,22 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
 								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-					</div>
-					<div id="section_info">
+					</a>
+					<a href="" id="section_info">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
 						<div id="section_title">DENIM SHORTS</div>
 						<div id="section_description">$ 39.90</div>
-					</div>
+					</a>
 				</div>
 			</div>
 
@@ -351,57 +503,92 @@
 						<span>EDITOR CHOICE</span>
 						<i class="fas fa-plus-circle"></i>
 					</div>
-					<div id="card_content">
+					<a href="" id="card_content">
 						<div id="card_bg">
 							<i class="fas fa-plus-circle" id="cart_circle"></i>
 						</div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">HOODED JACKET</div>
 							<div id="card_price">$ 29.90</div>
 							<div id="card_category">
 								<span id="card_purple"> EDITOR CHOICE </span>
 							</div>
 						</div>
-					</div>
-					<div id="card_content">
+					</a>
+					<a href="" id="card_content">
 						<div id="card_bg"></div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">BATMENT T-SHIRT</div>
 							<div id="card_price">$ 35.90</div>
 							<div id="card_category">
 								<span id="card_green">NEW</span>
 							</div>
 						</div>
-					</div>
-					<div id="card_content">
+					</a>
+					<a href="" id="card_content">
 						<div id="card_bg"></div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">LIGHT PINK PARKA</div>
 							<div id="card_price">$ 49.90</div>
 							<div id="card_category">
 								<span id="card_yellow"> EXCULSIVE </span>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="choices">
 					<div id="card_header">
 						<span>TRENDING ITEMS</span>
 						<i class="fas fa-plus-circle"></i>
 					</div>
-					<div id="card_content">
+					<a href="" id="card_content">
 						<div id="card_bg"></div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">LIGHT PINK PARKA</div>
 							<div id="card_price">$ 49.90</div>
 							<div id="card_category">
 								<span id="card_yellow"> EXCULSIVE </span>
 							</div>
 						</div>
-					</div>
-					<div id="card_content">
+					</a>
+					<a href="" id="card_content">
 						<div id="card_bg"></div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">NYC SWEATSHIRT</div>
 							<div id="card_price">
 								<del>$ 35.90</del> $ 14.90
@@ -410,17 +597,24 @@
 								<span id="card_gray"> SALE OFF </span>
 							</div>
 						</div>
-					</div>
-					<div id="card_content">
+					</a>
+					<a href="" id="card_content">
 						<div id="card_bg"></div>
 						<div id="card_detail_description">
+							<img
+								src="./assets/images/lines.png"
+								alt="Lines"
+								height="10px"
+								width="10px"
+								id="img_top_lines"
+							/>
 							<div id="card_title">DENIM SHORTS</div>
 							<div id="card_price">$ 39.90</div>
 							<div id="card_category">
 								<span id="card_green">NEW</span>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="choices">
 					<div id="blog_card_header">
@@ -458,7 +652,7 @@
 		</section>
 		<footer>
 			<div id="charges">
-				<div id="charges_shipping">
+				<div id="charges_shipping" class="charges_extra_returns">
 					<h1 id="shipping_title">FREE SHIPPING</h1>
 					<span id="shipping_content">
 						For standard orders over 50 USD
@@ -467,7 +661,7 @@
 						<a href="#">More info here ></a>
 					</span>
 				</div>
-				<div id="charges_returns">
+				<div id="charges_returns" class="charges_extra_returns">
 					<span id="return_title">FREE RETURNS</span>
 					<span id="return_content">
 						For standard orders in 30 days
@@ -516,24 +710,33 @@
 
 			<div id="footer_data">
 				<div id="footer_left">
-					<h1>1992</h1>
-					<span>About</span>
-					<span>Contact</span>
-					<span>Our Stores</span>
-					<span>IOS&AndroidApps</span>
+					<a href="" id="footer_title">1992</a>
+					<a href="" class="footer_text">About</a>
+					<a href="" class="footer_text">Contact</a>
+					<a href="" class="footer_text">Our Stores</a>
+					<a href="" class="footer_text">IOS&AndroidApps</a>
 				</div>
+
 				<div id="footer_icon">
 					<div id="bottom_to_top">
+						<img
+							src="./assets/images/lines.png"
+							alt="Lines"
+							height="15px"
+							width="15px"
+							id="img_top_lines"
+						/>
 						<i class="fas fa-arrow-up"></i>
 					</div>
 				</div>
+
 				<div id="footer_right">
-					<div>FAQs</div>
-					<span>Size Guide</span>
-					<span>DelieveryInfo</span>
-					<span>Return Info</span>
-					<span>Discount</span>
-					<span>Gift</span>
+					<a href="" class="footer_text">FAQs</a>
+					<a href="" class="footer_text">Size Guide</a>
+					<a href="" class="footer_text">DelieveryInfo</a>
+					<a href="" class="footer_text">Return Info</a>
+					<a href="" class="footer_text">Discount</a>
+					<a href="" class="footer_text">Gift</a>
 				</div>
 			</div>
 		</footer>
