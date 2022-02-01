@@ -26,15 +26,25 @@
 
 				<div id="header_announcment_right">
 					<span class="fas fa-globe"></span>
-					<p>English</p>
+					<select id="language" style="border: none">
+						<option value="volvo">English</option>
+						<option value="saab">Hindi</option>
+						<option value="mercedes">Gujarati</option>
+						<option value="audi">French</option>
+					</select>
 
 					<span class="fas fa-money-bill-alt"></span>
-					<p>USD</p>
+					<select id="money" style="border: none">
+						<option value="volvo">USD</option>
+						<option value="saab">AED</option>
+						<option value="mercedes">GBP</option>
+						<option value="audi">INR</option>
+					</select>
 
-					<p id="shipping">Shipping to: <u>Vietenam</u></p>
+					<a href="" id="shipping">Shipping to: <u>Vietenam</u></a>
 
-					<p>Sign-in</p>
-					<p>Register</p>
+					<a href="" class="auth">Sign-in</a>
+					<a href="" class="auth">Register</a>
 				</div>
 			</div>
 
@@ -653,6 +663,13 @@
 		<footer>
 			<div id="charges">
 				<div id="charges_shipping" class="charges_extra_returns">
+					<img
+						src="./assets/images/lines.png"
+						alt="Lines"
+						height="15px"
+						width="15px"
+						id="img_top_lines"
+					/>
 					<h1 id="shipping_title">FREE SHIPPING</h1>
 					<span id="shipping_content">
 						For standard orders over 50 USD
@@ -662,6 +679,13 @@
 					</span>
 				</div>
 				<div id="charges_returns" class="charges_extra_returns">
+					<img
+						src="./assets/images/lines.png"
+						alt="Lines"
+						height="15px"
+						width="15px"
+						id="img_top_lines"
+					/>
 					<span id="return_title">FREE RETURNS</span>
 					<span id="return_content">
 						For standard orders in 30 days

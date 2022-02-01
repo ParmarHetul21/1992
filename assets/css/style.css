@@ -15,6 +15,11 @@
 	border-bottom: 0.5px solid lightgrey;
 }
 
+#header_annoucment select {
+	color: #959595;
+	font-size: 13px;
+}
+
 #header_announcment_left {
 	display: flex;
 	justify-content: center;
@@ -51,7 +56,14 @@
 }
 
 #shipping {
+	color: #959595;
+	text-decoration: none;
 	padding: 10px 20px;
+}
+
+.auth {
+	text-decoration: none;
+	color: #959595;
 }
 
 #action_link button {
@@ -772,10 +784,7 @@ footer {
 
 footer #charges {
 	display: flex;
-	gap: 50px;
 	justify-content: space-evenly;
-	padding: 30px;
-	border: 1px solid black;
 	margin-inline: 20%;
 }
 
@@ -783,16 +792,24 @@ footer #charges #charges_shipping {
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
+	padding: 40px;
+	flex: 1;
+	border-right: none;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid black;
 }
 
 footer #charges #charges_returns {
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
+	flex: 1;
+	padding: 40px;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid black;
+	border-left: none;
 }
 
 #charges #charges_shipping #shipping_title {
@@ -807,6 +824,22 @@ footer #charges #charges_returns {
 	color: black;
 	font-weight: 900;
 	text-align: center;
+}
+
+#charges #charges_shipping img {
+	opacity: 0;
+}
+
+#charges #charges_shipping:hover img {
+	opacity: 1;
+}
+
+#charges #charges_returns img {
+	opacity: 0;
+}
+
+#charges #charges_returns:hover img {
+	opacity: 1;
 }
 
 #charges #charges_shipping #shipping_content {
