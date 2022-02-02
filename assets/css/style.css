@@ -31,8 +31,17 @@
 	padding-inline: 20%;
 }
 
+.fa-search {
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+}
+
 #navbar #action_link #shopping_cart_items {
 	position: relative;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
 }
 
 #navbar #action_link #shopping_cart_items #item_count {
@@ -57,10 +66,82 @@
 	gap: 10px;
 }
 
+.dropDownList {
+	position: relative;
+	cursor: pointer;
+}
+
+.dropDownList:hover ul {
+	opacity: 1;
+}
+
+.dropDownList ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	position: absolute;
+	background-color: white;
+	color: #959595;
+	z-index: 1;
+	opacity: 0;
+	width: 163%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+}
+
+.dropDownList ul li {
+	padding: 5px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.dropDownList ul li:hover {
+	text-decoration: underline;
+}
+
+/* --------- */
+.page_dropDownList {
+	position: relative;
+	cursor: pointer;
+}
+
+.page_dropDownList:hover ul {
+	opacity: 1;
+}
+
+.page_dropDownList ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	position: absolute;
+	background-color: white;
+	color: black;
+	z-index: 10;
+	opacity: 0;
+	width: 135%;
+	left: 40%;
+	transform: translateX(-50%);
+}
+
+.page_dropDownList ul li {
+	padding: 5px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.page_dropDownList ul li:hover {
+	text-decoration: underline;
+}
+
 #shipping {
 	color: #959595;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 6px 20px;
 }
 
 .auth {
@@ -603,6 +684,22 @@
 	font-weight: 900;
 	font-family: "Lato";
 	text-align: center;
+	position: relative;
+}
+
+#item1:hover .item_block::before,
+#item3:hover .item_block::before,
+#item4:hover .item_block::before,
+#item5:hover .item_block::before {
+	position: absolute;
+	content: "";
+	background-image: url("../images/hover-detail-white.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 20px;
+	width: 20px;
+	top: -25%;
+	left: 45%;
 }
 
 .item_block_italic {

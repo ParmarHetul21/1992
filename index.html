@@ -26,20 +26,26 @@
 
 				<div id="header_announcment_right">
 					<span class="fas fa-globe"></span>
-					<select id="language" style="border: none">
-						<option value="volvo">English</option>
-						<option value="saab">Hindi</option>
-						<option value="mercedes">Gujarati</option>
-						<option value="audi">French</option>
-					</select>
+					<div class="dropDownList">
+						<span class="dropDownList_hover">Italian</span>
+						<ul id="country_list">
+							<li>English</li>
+							<li>Hindi</li>
+							<li>Gujarati</li>
+							<li>Telugu</li>
+						</ul>
+					</div>
 
 					<span class="fas fa-money-bill-alt"></span>
-					<select id="money" style="border: none">
-						<option value="volvo">USD</option>
-						<option value="saab">AED</option>
-						<option value="mercedes">GBP</option>
-						<option value="audi">INR</option>
-					</select>
+					<div class="dropDownList">
+						<span class="dropDownList_hover">USD</span>
+						<ul id="currency_list">
+							<li>AED</li>
+							<li>INR</li>
+							<li>CDR</li>
+							<li>EUR</li>
+						</ul>
+					</div>
 					<a href="" id="shipping">Shipping to: <u>Vietenam</u></a>
 					<a href="" class="auth">Sign-in</a>
 					<a href="" class="auth">Register</a>
@@ -48,7 +54,14 @@
 
 			<div id="navbar">
 				<div>
-					<a href="" class="title">1992</a>
+					<a href="" class="title">
+						<img
+							src="./assets/images/1992.png"
+							alt="1992"
+							width="60px"
+							height="25px"
+						/>
+					</a>
 				</div>
 				<div id="action_link">
 					<a href="#" class="link_rm"
@@ -102,8 +115,18 @@
 							alt="Lines"
 							height="7px"
 							width="15px"
-						/>PAGES</a
-					>
+						/>
+						<div class="page_dropDownList">
+							<span class="page_dropDownList_hover">PAGE</span>
+							<i class="fas fa-chevron-down"></i>
+							<ul>
+								<li>PAGE1</li>
+								<li>PAGE2</li>
+								<li>PAGE3</li>
+								<li>PAGE4</li>
+							</ul>
+						</div>
+					</a>
 
 					<a href="#" class="link_rm"
 						><img
@@ -111,28 +134,15 @@
 							alt="Lines"
 							height="7px"
 							width="15px"
-						/>CONTACT</a
-					>
+						/>CONTACT
+					</a>
 
-					<a
-						href=""
-						class="fas fa-search"
-						style="
-							font-size: 16px;
-							text-decoration: none;
-							color: black;
-						"
-					></a>
+					<a href="" class="fas fa-search"> </a>
 
 					<a
 						href=""
 						class="fas fa-shopping-cart"
 						id="shopping_cart_items"
-						style="
-							font-size: 16px;
-							text-decoration: none;
-							color: black;
-						"
 					>
 						<sup id="item_count">0</sup>
 					</a>
@@ -350,12 +360,6 @@
 
 			<div class="grid-container">
 				<a href="" id="item1">
-					<!-- <img
-						src="./assets/images/hover-detail-white.png"
-						alt="Lines"
-						height="7px"
-						width="15px"
-					/> -->
 					<span class="item_block">Denim</span>
 					<span class="item_block_italic">Trends of season</span>
 				</a>
@@ -366,24 +370,12 @@
 					></i>
 				</a>
 				<a href="" id="item3">
-					<!-- <img
-						src="./assets/images/hover-detail-white.png"
-						alt="Lines"
-						height="7px"
-						width="15px"
-					/> -->
 					<span class="item_block"><span>Accessories</span></span>
 					<span class="item_block_italic"
 						>Style hard, style harder</span
 					>
 				</a>
 				<a href="" id="item4">
-					<!-- <img
-						src="./assets/images/hover-detail-white.png"
-						alt="Lines"
-						height="7px"
-						width="15px"
-					/> -->
 					<span class="item_block">Shoes</span>
 					<span class="item_block_italic">New Shoes For Springs</span>
 				</a>
@@ -767,7 +759,13 @@
 
 			<div id="footer_data">
 				<div id="footer_left">
-					<a href="" class="title">1992</a>
+					<a href="" class="title"
+						><img
+							src="./assets/images/1992.png"
+							alt="1992"
+							width="60px"
+							height="25px"
+					/></a>
 					<a href="" class="footer_text">About</a>
 					<a href="" class="footer_text">Contact</a>
 					<a href="" class="footer_text">Our Stores</a>
