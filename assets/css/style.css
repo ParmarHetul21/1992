@@ -627,8 +627,9 @@
 	text-decoration: none;
 	background-color: lightgrey;
 	text-align: center;
-	padding: 50px 90px;
-	width: 100px;
+	padding: 50px 0;
+	width: 100%;
+	min-height: 100px;
 	font-size: 30px;
 }
 
@@ -645,7 +646,7 @@
 }
 
 .grid-container #item5 {
-	background-image: url("../images/img.png");
+	background-image: url("../images/hover-detail-white.png");
 	background-position: top 280px left -140px;
 	background-repeat: no-repeat;
 	display: flex;
@@ -777,7 +778,7 @@
 
 #main_content .choices #blog_card_header {
 	display: flex;
-	column-gap: 195px;
+	column-gap: 234px;
 	font-weight: 600;
 	font-size: 14px;
 }
@@ -894,7 +895,7 @@
 
 #main_content .choices .blog_card_bg {
 	display: flex;
-	width: 300px;
+	width: 340px;
 	height: 100px;
 	background-color: #cccccc;
 	align-items: flex-end;
@@ -1114,6 +1115,14 @@ footer #charges #charges_returns {
 	font-weight: 400;
 }
 
+input[type="email"]:focus-visible {
+	outline: none;
+}
+
+input[type="submit"]:focus-visible {
+	outline: none;
+}
+
 #footer_infdo #left_side #newsletter {
 	font-size: 72px;
 	line-height: 85px;
@@ -1126,7 +1135,7 @@ footer #charges #charges_returns {
 	gap: 3px;
 	flex-wrap: wrap;
 	align-content: center;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: stretch;
 	min-width: 39%;
 	max-width: 35%;
@@ -1158,7 +1167,7 @@ footer #charges #charges_returns {
 #footer_data {
 	margin-inline: 20%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: flex-end;
 	padding-top: 40px;
 }
@@ -1211,7 +1220,6 @@ footer #charges #charges_returns {
 	position: absolute;
 	right: 50%;
 	bottom: 0%;
-	top: 443%;
 	opacity: 0;
 }
 
