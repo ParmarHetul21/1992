@@ -10,13 +10,13 @@
 			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<title>Assesment-1</title>
+		<link rel="stylesheet" href="./assets/css/style.min.css" />
+		<title>1992</title>
 	</head>
 	<body>
 		<header>
-			<div id="header_annoucment">
-				<div id="header_announcment_left">
+			<div class="header_annoucment">
+				<div class="header_announcment_left">
 					<span class="fas fa-bullhorn"></span>
 					<span>
 						Welcome to 1992 Online Shop! Lets start to shopping NOW
@@ -24,11 +24,11 @@
 					</span>
 				</div>
 
-				<div id="header_announcment_right">
+				<div class="header_announcment_right">
 					<span class="fas fa-globe"></span>
 					<div class="dropdownlist">
 						<span class="dropdownlist_hover">Italian</span>
-						<ul id="country_list">
+						<ul>
 							<li>English</li>
 							<li>Hindi</li>
 							<li>Gujarati</li>
@@ -39,31 +39,32 @@
 					<span class="fas fa-money-bill-alt"></span>
 					<div class="dropdownlist">
 						<span class="dropdownlist_hover">USD</span>
-						<ul id="currency_list">
+						<ul class="currency_list">
 							<li>AED</li>
 							<li>INR</li>
 							<li>CDR</li>
 							<li>EUR</li>
 						</ul>
 					</div>
-					<a href="" id="shipping">Shipping to: <u>Vietenam</u></a>
+					<a href="" class="shipping">Shipping to: <u>Vietenam</u></a>
 					<a href="" class="auth">Sign-in</a>
 					<a href="" class="auth">Register</a>
 				</div>
 			</div>
 
-			<div id="navbar">
-				<div>
-					<a href="" class="title">
-						<img
-							src="./assets/images/1992.png"
-							alt="1992"
-							width="60px"
-							height="25px"
-						/>
-					</a>
-				</div>
-				<div id="action_link">
+			<div class="navbar">
+				<a href="" class="title">
+					<img
+						src="./assets/images/1992.png"
+						alt="1992"
+						width="60px"
+						height="25px"
+					/>
+				</a>
+
+				<i class="fas fa-bars"></i>
+
+				<div class="action_link">
 					<a href="#" class="link_rm"
 						><img
 							src="./assets/images/hover-detail.png"
@@ -137,38 +138,34 @@
 						/>CONTACT
 					</a>
 
-					<a href="" alt="search" title="saearch">
+					<a href="" alt="search" title="search">
 						<i class="fas fa-search"></i>
 					</a>
 
-					<a
-						href=""
-						class="fas fa-shopping-cart"
-						id="shopping_cart_items"
-					>
-						<sup id="item_count">0</sup>
+					<a href="" class="fas fa-shopping-cart shopping_cart_items">
+						<sup class="item_count">0</sup>
 					</a>
 				</div>
 			</div>
 
-			<div id="img_container">
+			<div class="img_container">
 				<button class="fas fa-arrow-left ltr">
 					<img
 						src="./assets/images/hover-detail.png"
 						alt="Lines"
 						height="7px"
 						width="15px"
-						id="img_left_lines"
+						class="img_left_lines"
 					/>
 				</button>
-				<div id="align_container">
-					<span id="sale">SALE</span>
-					<span id="percentage_off">30% OFF</span>
-					<a href="" id="shop_now">SHOP NOW</a>
-					<div id="slider_footer">
-						<span id="ratios"><sup>3</sup>/<sub>5</sub></span>
-						<span id="end">SALE END SEASON</span>
-						<span id="season">FALL/WINTER 2014</span>
+				<div class="align_container">
+					<span class="sale">SALE</span>
+					<span class="percentage_off">30% OFF</span>
+					<a href="" class="shop_now">SHOP NOW</a>
+					<div class="slider_footer">
+						<span class="ratios"><sup>3</sup>/<sub>5</sub></span>
+						<span class="end">SALE END SEASON</span>
+						<span class="season">FALL/WINTER 2014</span>
 					</div>
 				</div>
 				<button class="fas fa-arrow-right rtl">
@@ -177,14 +174,14 @@
 						alt="Lines"
 						height="7px"
 						width="15px"
-						id="img_right_lines"
+						class="img_right_lines"
 					/>
 				</button>
 			</div>
 		</header>
 
 		<section>
-			<div id="header_category">
+			<div class="header_category">
 				<a href="#" class="cards">
 					<div class="category_image"></div>
 					<div class="description">
@@ -262,7 +259,7 @@
 								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-						<span id="editor">EDITOR'S CHOICE</span>
+						<span class="editor">EDITOR'S CHOICE</span>
 					</div>
 					<div class="section_info">
 						<img
@@ -319,7 +316,7 @@
 								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-						<span id="exclusive">Exclusive</span>
+						<span class="exclusive">Exclusive</span>
 					</div>
 					<div class="section_info">
 						<img
@@ -357,37 +354,34 @@
 							width="15px"
 						/>
 						<a href="" class="section_title">Denim dress</a>
-						<a hre class="section_description">$ 29.90</a>
+						<a href="" class="section_description">$ 29.90</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="grid-container">
-				<a href="" id="item1">
+				<a href="" class="item1">
 					<span class="item_block">Denim</span>
 					<span class="item_block_italic">Trends of season</span>
 				</a>
-				<a href="" id="item2">
-					<i
-						class="fas fa-play-circle"
-						style="color: grey; font-size: 44px"
-					></i>
+				<a href="" class="item2">
+					<i class="fas fa-play-circle circlegrey"></i>
 				</a>
-				<a href="" id="item3">
+				<a href="" class="item3">
 					<span class="item_block"><span>Accessories</span></span>
 					<span class="item_block_italic"
 						>Style hard, style harder</span
 					>
 				</a>
-				<a href="" id="item4">
+				<a href="" class="item4">
 					<span class="item_block">Shoes</span>
 					<span class="item_block_italic">New Shoes For Springs</span>
 				</a>
-				<a href="" id="item5">
+				<a href="" class="item5">
 					<h4 class="item_block size_sg">T-Shirts & VESTS</h4>
 					<h2 class="item_block_italic black">Under</h2>
 					<span class="item_block_italic size_bg">$25</span>
-					<span id="round_arrow">
+					<span class="round_arrow">
 						<i class="far fa-angle-double-right"></i>
 					</span>
 				</a>
@@ -450,7 +444,7 @@
 								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-						<span id="sales_off">SALES OFF</span>
+						<span class="sales_off">SALES OFF</span>
 					</a>
 					<a href="" class="section_info">
 						<img
@@ -463,9 +457,7 @@
 						<div class="section_title">NY.C Sweatshirt</div>
 						<div class="section_description">
 							<del>$ 35.90</del>
-							<b style="font-weight: 700; color: black"
-								>$ 14.90</b
-							>
+							<b class="boldedstyles">$ 14.90</b>
 						</div>
 					</a>
 				</div>
@@ -486,7 +478,7 @@
 								<i class="fas fa-star-half-alt"></i>
 							</div>
 						</div>
-						<span id="new">new</span>
+						<span class="new">new</span>
 					</a>
 					<a href="" class="section_info">
 						<img
@@ -509,7 +501,7 @@
 								<i class="far fa-heart"></i>
 								<i class="far fa-plus"></i>
 							</div>
-							<div id="section_ratings">
+							<div class="section_ratings">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -532,7 +524,7 @@
 				</div>
 			</div>
 
-			<div id="main_content">
+			<div class="main_content">
 				<div class="choices">
 					<div class="card_header">
 						<span>EDITOR CHOICE</span>
@@ -540,7 +532,7 @@
 					</div>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"> </i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -554,7 +546,7 @@
 								<li class="card_title">HOODED JACKET</li>
 								<li class="card_price">$ 29.90</li>
 								<li class="card_category">
-									<span id="card_purple">
+									<span class="card_purple">
 										EDITOR CHOICE
 									</span>
 								</li>
@@ -563,7 +555,7 @@
 					</a>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"></i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -584,7 +576,7 @@
 					</a>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"></i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -611,7 +603,7 @@
 					</div>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"></i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -632,7 +624,7 @@
 					</a>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"></i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -646,19 +638,17 @@
 								<li class="card_title">NYC SWEATSHIRT</li>
 								<li class="card_price">
 									<del>$ 35.90</del>
-									<b style="font-weight: 800; color: black"
-										>$ 14.90</b
-									>
+									<b class="boldedstyles">$ 14.90</b>
 								</li>
 								<li class="card_category">
-									<span id="card_gray"> SALE OFF </span>
+									<span class="card_gray"> SALE OFF </span>
 								</li>
 							</ul>
 						</div>
 					</a>
 					<a href="" class="card_content">
 						<div class="card_bg">
-							<i class="fas fa-plus-circle" id="cart_circle"></i>
+							<i class="fas fa-plus-circle cart_circle"></i>
 						</div>
 						<div class="card_detail_description">
 							<img
@@ -681,7 +671,7 @@
 
 				<!-- Other sections-->
 				<div class="choices">
-					<div id="blog_card_header">
+					<div class="blog_card_header">
 						<span>FROM THE BLOG</span>
 						<i class="fas fa-plus-circle clickable"></i>
 					</div>
@@ -715,8 +705,8 @@
 			</div>
 		</section>
 		<footer>
-			<div id="charges">
-				<div id="charges_shipping" class="charges_extra_returns">
+			<div class="charges">
+				<div class="charges_extra_returns charges_shipping">
 					<img
 						src="./assets/images/hover-detail.png"
 						alt="Lines"
@@ -724,16 +714,16 @@
 						width="15px"
 						class="img_top_lines"
 					/>
-					<h1 id="shipping_title">FREE SHIPPING</h1>
-					<span id="shipping_content">
+					<h1 class="shipping_title">FREE SHIPPING</h1>
+					<span class="shipping_content">
 						For standard orders over 50 USD
 					</span>
-					<span id="shipping_link">
+					<span class="shipping_link">
 						<a href="#" class="goods_info">More info here ></a>
 					</span>
 				</div>
 
-				<div id="charges_returns" class="charges_extra_returns">
+				<div class="charges_extra_returns charges_returns">
 					<img
 						src="./assets/images/hover-detail.png"
 						alt="Lines"
@@ -741,35 +731,35 @@
 						width="15px"
 						class="img_top_lines"
 					/>
-					<span id="return_title">FREE RETURNS</span>
-					<span id="return_content">
+					<span class="return_title">FREE RETURNS</span>
+					<span class="return_content">
 						For standard orders in 30 days
 					</span>
-					<span id="return_link">
+					<span class="return_link">
 						<a href="#" class="goods_info">More info here ></a>
 					</span>
 				</div>
 			</div>
 
-			<div id="footer_info">
-				<div id="left_side">
-					<h1 id="newsletter">Newsletter</h1>
+			<div class="footer_info">
+				<div class="left_side">
+					<h1 class="newsletter">Newsletter</h1>
 					<div class="input_data">
 						<input
 							type="email"
 							name="email"
-							id="email"
+							class="email"
 							placeholder="Enter email address"
 						/>
-						<input type="submit" value="SUBMIT" id="submit" />
+						<input type="submit" value="SUBMIT" class="submit" />
 					</div>
-					<span id="newsinfo">
+					<span class="newsinfo">
 						Sign up to receive the lastest fashion, trend and
 						culture via email and get exclusive offers from 1992's
 						Shop.
 					</span>
 				</div>
-				<div id="social_media_matrix">
+				<div class="social_media_matrix">
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
@@ -787,8 +777,8 @@
 				</div>
 			</div>
 
-			<div id="footer_data">
-				<div id="footer_left">
+			<div class="footer_data">
+				<div class="footer_left">
 					<a href="" class="title"
 						><img
 							src="./assets/images/1992.png"
@@ -802,8 +792,8 @@
 					<a href="" class="footer_text">IOS&AndroidApps</a>
 				</div>
 
-				<div id="footer_icon">
-					<div id="bottom_to_top">
+				<div class="footer_icon">
+					<div class="bottom_to_top">
 						<img
 							src="./assets/images/hover-detail.png"
 							alt="Lines"
@@ -815,7 +805,7 @@
 					</div>
 				</div>
 
-				<div id="footer_right">
+				<div class="footer_right">
 					<a href="" class="footer_text">FAQs</a>
 					<a href="" class="footer_text">Size Guide</a>
 					<a href="" class="footer_text">DelieveryInfo</a>
