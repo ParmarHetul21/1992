@@ -66,16 +66,16 @@
 	gap: 10px;
 }
 
-.dropDownList {
+.dropdownlist {
 	position: relative;
 	cursor: pointer;
 }
 
-.dropDownList:hover ul {
+.dropdownlist:hover ul {
 	opacity: 1;
 }
 
-.dropDownList ul {
+.dropdownlist ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -92,27 +92,27 @@
 	font-size: 12px;
 }
 
-.dropDownList ul li {
+.dropdownlist ul li {
 	padding: 5px;
 	line-height: 30px;
 	font-size: 12px;
 }
 
-.dropDownList ul li:hover {
+.dropdownlist ul li:hover {
 	text-decoration: underline;
 }
 
 /* --------- */
-.page_dropDownList {
+.page_dropdownlist {
 	position: relative;
 	cursor: pointer;
 }
 
-.page_dropDownList:hover ul {
+.page_dropdownlist:hover ul {
 	opacity: 1;
 }
 
-.page_dropDownList ul {
+.page_dropdownlist ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -128,13 +128,13 @@
 	transform: translateX(-50%);
 }
 
-.page_dropDownList ul li {
+.page_dropdownlist ul li {
 	padding: 5px;
 	line-height: 30px;
 	font-size: 15px;
 }
 
-.page_dropDownList ul li:hover {
+.page_dropdownlist ul li:hover {
 	text-decoration: underline;
 }
 
@@ -415,13 +415,13 @@
 	opacity: 1;
 }
 
-#header_category .cards .description #category_title {
+#header_category .cards .description .category_title {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 700;
 }
 
-#header_category .cards .description #category_description {
+#header_category .cards .description .category_description {
 	font-size: 12px;
 	font-style: italic;
 	color: #959595;
@@ -454,7 +454,7 @@
 	text-align: center;
 }
 
-#header_indicator {
+.header_indicator {
 	padding-top: 20px;
 	display: flex;
 	gap: 9px;
@@ -462,7 +462,7 @@
 	align-items: center;
 }
 
-#header_indicator span {
+.header_indicator span {
 	display: block;
 	background-color: #cccccc;
 	border-radius: 50%;
@@ -470,7 +470,7 @@
 	height: 5px;
 }
 
-#sections {
+.sections {
 	padding-inline: 20%;
 	padding-top: 25px;
 	display: flex;
@@ -478,7 +478,7 @@
 	gap: 10px;
 }
 
-#sections .section_img {
+.sections .section_img {
 	text-decoration: none;
 	color: black;
 	position: relative;
@@ -491,14 +491,14 @@
 	gap: 5px;
 }
 
-#sections .section_title {
+.sections .section_title {
 	font-size: 16px;
 	font-weight: 400;
 	color: #000000;
 	text-decoration: none;
 }
 
-#sections .section_description {
+.sections .section_description {
 	font-size: 14px;
 	color: #959595;
 	text-decoration: none;
@@ -506,14 +506,14 @@
 	font-family: "Playfair Display";
 }
 
-#sections .section_parition {
+.sections .section_parition {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
 }
 
-#sections .section_parition .section_info {
+.sections .section_parition .section_info {
 	text-decoration: none;
 	margin-top: 20px;
 	display: flex;
@@ -521,18 +521,18 @@
 	align-items: center;
 }
 
-#sections .section_parition .section_info img {
+.sections .section_parition .section_info img {
 	opacity: 0;
 }
 
-#sections .section_parition .section_info:hover img {
+.sections .section_parition .section_info:hover img {
 	opacity: 1;
 }
 
 .clickable {
 	cursor: pointer;
 }
-#sections .section_parition .section_img .far {
+.sections .section_parition .section_img .far {
 	font-size: 16px;
 	opacity: 0.4;
 	background-color: black;
@@ -543,7 +543,7 @@
 	margin-inline: 3px;
 }
 
-#sections .section_parition .section_img .far:hover {
+.sections .section_parition .section_img .far:hover {
 	background-color: black;
 	opacity: 1;
 }
@@ -595,7 +595,7 @@
 	font-weight: 500;
 }
 
-#sections .section_parition .section_img .actions_hide {
+.sections .section_parition .section_img .actions_hide {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -607,11 +607,11 @@
 	align-items: center;
 }
 
-#sections .section_parition .section_img .actions_hide:hover {
+.sections .section_parition .section_img .actions_hide:hover {
 	opacity: 1;
 }
 
-#sections .section_img:hover {
+.sections .section_img:hover {
 	opacity: 0.8;
 }
 
@@ -1058,8 +1058,8 @@ footer #charges #charges_returns {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-inline: 94px;
 	min-height: 400px;
+	padding-left: 70px;
 }
 
 #footer_info #left_side .input_data {
