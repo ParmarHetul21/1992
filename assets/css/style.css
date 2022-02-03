@@ -556,14 +556,18 @@
 	cursor: pointer;
 }
 .sections .section_parition .section_img .far {
+	display: inline-block;
+	height: 30px;
 	font-size: 16px;
 	opacity: 0.4;
-	background-color: black;
+	background-color: #000;
 	border-radius: 50%;
-	color: #ffffff;
-	padding: 9px;
+	color: #fff;
+	padding: 5px;
 	text-align: center;
-	margin-inline: 3px;
+	margin-inline: 1px;
+	width: 30px;
+	line-height: 30px;
 }
 
 .sections .section_parition .section_img .far:hover {
@@ -1226,6 +1230,7 @@ input[type="submit"]:focus-visible {
 }
 
 .footer_data .footer_icon .bottom_to_top {
+	position: relative;
 	padding: 12px;
 	color: white;
 	background-color: black;
@@ -1255,6 +1260,7 @@ input[type="submit"]:focus-visible {
 
 .bottom_to_top > .img_top_lines {
 	position: absolute;
+	bottom: 120%;
 	opacity: 0;
 }
 
