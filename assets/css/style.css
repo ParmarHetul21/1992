@@ -220,8 +220,10 @@
 
 .img_container {
 	position: relative;
-	height: 550px;
-	background-color: #a3a3a3;
+	background-image: url("/assets/images/cover1.jpg");
+	background-size: 100%;
+	background-position: 30%;
+	background-repeat: no-repeat;
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -385,9 +387,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	object-fit: cover;
 	color: white;
 }
 
+iframe {
+	height: 100%;
+	width: 100%;
+}
 .cards .category_image i {
 	font-size: 50px;
 }
@@ -492,6 +499,49 @@
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
+}
+
+.sections .img1 {
+	background-image: url("/assets/images/black-hooded.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.sections .img2 {
+	background-image: url("/assets/images/fine-cardigan.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit: fill;
+}
+
+.sections .img3 {
+	background-image: url("/assets/images/light-pink-parka.jpeg");
+	background-size: 120%;
+	background-repeat: no-repeat;
+}
+
+.sections .img4 {
+	background-image: url("/assets/images/denim-dress.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.sections .img5 {
+	background-image: url("/assets/images/NYC.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.sections .img6 {
+	background-image: url("/assets/images/batmen-tshirts.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sections .img7 {
+	background-image: url("/assets/images/denim-shorts.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .sections .section_title {
@@ -619,7 +669,7 @@
 }
 
 .sections .section_img:hover {
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .grid-container {
@@ -652,8 +702,32 @@
 	position: relative;
 }
 
-.circlegrey {
-	color: grey;
+.grid-container .item-img1 {
+	background-image: url("/assets/images/different-denim.jpeg");
+	background-position: 40%;
+	background-repeat: repeat;
+}
+
+.grid-container .item-img2 {
+	background-image: url("/assets/images/men-women-accessroies.jpeg");
+	background-position: 20%;
+	background-repeat: repeat;
+}
+
+.grid-container .item-img3 {
+	background-image: url("/assets/images/shoes.jpeg");
+	background-position: 50%;
+	background-repeat: repeat;
+}
+
+.grid-container .item-img4 {
+	background-image: url("/assets/images/tshirt-vest.jpg");
+	background-position: 100%;
+	background-repeat: no-repeat;
+}
+
+.circlewhite {
+	color: white;
 	font-size: 44px;
 }
 
@@ -663,8 +737,8 @@
 }
 
 .grid-container .item5 {
-	background-image: url("/assets/images/hover-detail.png");
-	background-position: top 280px left -140px;
+	background-image: url("/assets/images/tshirt-vest.jpg");
+	background-position: 30% top;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
@@ -688,7 +762,7 @@
 .item3:hover,
 .item4:hover {
 	background-color: black;
-	opacity: 0.4;
+	opacity: 0.6;
 }
 
 .item5:hover {
@@ -769,7 +843,6 @@
 .main_content {
 	margin-inline: 20%;
 	display: flex;
-	flex: 0, 1;
 	gap: 16px;
 	padding-top: 40px;
 }
@@ -837,6 +910,60 @@
 	height: 100px;
 }
 
+.card1 {
+	background-image: url("/assets/images/black-hooded.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.card2 {
+	background-image: url("/assets/images/batmen-tshirts.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.card3 {
+	background-image: url("/assets/images/light-pink-parka.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.card4 {
+	background-image: url("/assets/images/NYC.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.card5 {
+	background-image: url("/assets/images/denim-shorts.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.card6 {
+	background-image: url("/assets/images/10-hot-trends.jpeg");
+	background-size: cover;
+	background-position: center 20%;
+}
+
+.card7 {
+	background-image: url("/assets/images/styles-for-summer.jpeg");
+	background-size: cover;
+	background-position: center 10%;
+}
+
+.card8 {
+	background-image: url("/assets/images/shoes.jpeg");
+	background-size: cover;
+	background-position: center 10%;
+}
+
+.card9 {
+	background-image: url("/assets/images/men-women-accessroies.jpeg");
+	background-size: cover;
+	background-position: center 10%;
+}
+
 .main_content .choices .card_bg {
 	position: relative;
 	font-size: 30px;
@@ -854,7 +981,7 @@
 
 .main_content .choices .card_bg .cart_circle:hover,
 .main_content .choices .card_bg:hover {
-	opacity: 0.6;
+	opacity: 0.9;
 }
 
 .card_detail_description .card_title {
@@ -1073,14 +1200,13 @@ footer .charges .charges_returns {
 }
 
 .footer_info .left_side {
-	background-color: #cccccc;
+	background-color: #ccc;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 400px;
-	padding-left: 70px;
-	padding-right: 20px;
+	min-height: 263px;
+	padding-inline: 55px;
 }
 
 .footer_info .left_side .input_data {
@@ -1158,7 +1284,7 @@ input[type="submit"]:focus-visible {
 	align-content: center;
 	justify-content: flex-end;
 	align-items: stretch;
-	min-width: 39%;
+	min-width: 33%;
 	max-width: 35%;
 	width: 35%;
 	max-height: 100%;
@@ -1166,8 +1292,8 @@ input[type="submit"]:focus-visible {
 
 .footer_info .social_media_matrix .items {
 	min-width: 30%;
-	height: 140px;
-	background-color: #cccccc;
+	aspect-ratio: 1;
+	background-color: #ccc;
 }
 
 .social_media_matrix .items:nth-child(7) {
@@ -1248,21 +1374,272 @@ input[type="submit"]:focus-visible {
 	opacity: 1;
 }
 
-@media screen and (max-width: 750px) {
-	.fa-bars {
+.shipping-icon {
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	.header_annoucment {
+		padding-inline: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		font-size: 13px;
+		color: #959595;
+		border-bottom: 0.5px solid #d3d3d3;
+	}
+
+	.align_container {
+		padding-top: 50px;
+		line-height: 0px;
+	}
+
+	.fa-bars,
+	.shipping-icon {
 		display: block;
 	}
+
+	.shipping-icon a {
+		text-decoration: underline;
+		color: #959595;
+	}
+
+	.shipping,
+	.header_announcment_left .sl-title {
+		display: none;
+	}
+
+	.header_announcment_right {
+		position: relative;
+	}
+
 	.navbar {
+		position: relative;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 	}
 
 	.navbar .action_link {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.fa-bars {
+		position: absolute;
+		left: 10px;
+		right: 100px;
+	}
+
+	.sale {
+		padding-top: 80px;
+	}
+
+	.header_category {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header_category .cards {
+		width: 100%;
+		min-width: 350px;
+	}
+
+	.header_category .cards:nth-child(2) {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.sections {
+		display: flex;
+		flex-direction: column;
+		padding-inline: 10%;
+		padding-top: 15px;
+		justify-content: space-between;
+		gap: 5px;
+	}
+
+	.sections .section_parition .section_info {
+		margin-bottom: 20px;
+	}
+
+	.grid-container {
+		display: flex;
+		flex-direction: column;
+		padding-inline: 10%;
+		margin: 0%;
+	}
+
+	.grid-container .item5 {
+		width: 100%;
+		max-height: 100px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		min-width: 100px;
+	}
+
+	.item_block_italic.black {
+		font-size: 20px;
+		color: #000;
+		font-weight: 700;
+		font-style: italic;
+		font-family: "Playfair Display";
+		text-align: center;
+	}
+
+	.size_bg {
+		font-size: 30px;
+		color: #000;
+		font-weight: 400;
+		font-style: italic;
+		font-family: "Playfair Display";
+	}
+
+	.item5 .round_arrow {
+		position: relative;
+		width: 8px;
+		padding: 13px;
+		color: #fff;
+		border-radius: 50%;
+		font-size: 24px;
+		background-color: grey;
+	}
+
+	.round_arrow i {
+		position: absolute;
+		left: 7px;
+		top: 5px;
+		right: 4px;
+		font-size: 16px;
+	}
+
+	.main_content .choices .card_header {
+		display: flex;
+		column-gap: 16px;
+		font-weight: 600;
+		font-size: 14px;
+		justify-content: space-between;
+	}
+
+	.main_content {
+		padding-inline: 11%;
+		display: flex;
+		gap: 16px;
+		padding-top: 10px;
+	}
+
+	.footer .charges {
+		display: flex;
+		justify-content: space-evenly;
+		padding-inline: 11%;
+	}
+
+	.header_annoucment,
+	.navbar,
+	.img_container,
+	.main_content {
+		display: none;
+	}
+
+	footer .charges {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-inline: 7%;
+	}
+
+	footer .charges .charges_shipping {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 13px;
+		flex: 1;
+		border-right: none;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #000;
+		border-bottom: none;
+	}
+
+	footer .charges .charges_returns {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		flex: 1;
+		padding: 13px;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #000;
+		border-left: 1px solid black;
+	}
+
+	.footer_data {
+		display: flex;
+		flex-direction: row;
+		margin-inline: 5%;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-top: 40px;
+	}
+
+	.footer_data .footer_left {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 18px;
+	}
+
+	.footer_data .footer_right {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 18px;
+	}
+
+	.footer_data .footer_icon .bottom_to_top {
+		position: relative;
+		padding: 12px;
+		color: #fff;
+		background-color: #000;
+		text-align: center;
+		font-size: 18px;
+		cursor: pointer;
+		margin-inline: 60px;
+	}
+
+	.title {
+		text-decoration: none;
+		font-size: 43px;
+		line-height: 24px;
+		color: #252525;
+		font-weight: 700;
+		font-family: "Playfair Display";
+	}
+
+	.footer_data .footer_text {
+		font-size: 12px;
+		line-height: 24px;
+		color: #959595;
+		font-weight: 400;
+		font-family: Lato;
+		text-decoration: none;
+	}
+
+	.footer_info {
+		display: flex;
+		row-gap: 9px;
+		flex-direction: column;
+		margin-inline: 10%;
+		padding-top: 40px;
 	}
 }
