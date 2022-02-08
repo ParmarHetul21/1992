@@ -1451,6 +1451,8 @@ input[type="submit"]:focus-visible {
 	display: none;
 }
 
+/* media query block */
+
 @media screen and (max-width: 650px) {
 	.check-box,
 	.fa-bars {
@@ -1552,7 +1554,6 @@ input[type="submit"]:focus-visible {
 	.header_category {
 		display: flex;
 		flex-direction: column;
-		padding-left: 89px;
 	}
 
 	.header_category .cards {
@@ -1712,16 +1713,20 @@ input[type="submit"]:focus-visible {
 
 	.item_block_italic.black {
 		font-size: 20px;
-		color: #000;
+		color: #ccc;
 		font-weight: 700;
 		font-style: italic;
 		font-family: "Playfair Display";
 		text-align: center;
 	}
 
+	.size_sg {
+		color: #ccc;
+	}
+
 	.size_bg {
 		font-size: 30px;
-		color: #000;
+		color: #ccc;
 		font-weight: 400;
 		font-style: italic;
 		font-family: "Playfair Display";
@@ -1729,12 +1734,26 @@ input[type="submit"]:focus-visible {
 
 	.item5 .round_arrow {
 		position: relative;
-		width: 8px;
-		padding: 13px;
+		width: 1px;
+		padding: 14px;
 		color: #fff;
 		border-radius: 50%;
 		font-size: 24px;
 		background-color: grey;
+	}
+
+	.item1::after,
+	.item2::after,
+	.item3::after,
+	.item4::after,
+	.item5::after {
+		content: "";
+		position: absolute;
+		display: block;
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		opacity: 0.6;
 	}
 
 	.round_arrow i {
@@ -1941,7 +1960,7 @@ input[type="submit"]:focus-visible {
 
 	.footer_info .social_media_matrix {
 		display: flex;
-		gap: 3px;
+		gap: 6px;
 		flex-wrap: wrap;
 		align-content: center;
 		justify-content: flex-start;
@@ -1952,11 +1971,19 @@ input[type="submit"]:focus-visible {
 		max-height: 100%;
 	}
 
+	.footer_info .social_media_matrix .items {
+		min-width: 32%;
+	}
+
 	.footer-demo {
 		position: sticky;
 		bottom: 0;
 		padding: 20px;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.footer_info .left_side .newsinfo {
+		padding-bottom: 7px;
 	}
 }
