@@ -32,6 +32,24 @@
 	padding-inline: 20%;
 }
 
+.sticky-header {
+	position: sticky;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	background-color: white;
+}
+
+.fixed-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	background-color: white;
+}
+
 .fa-search {
 	font-size: 16px;
 	text-decoration: none;
@@ -1354,7 +1372,7 @@ input[type="submit"]:focus-visible {
 }
 
 .footer_info .social_media_matrix .items {
-	min-width: 30%;
+	min-width: 32%;
 	aspect-ratio: 1;
 	background-color: #ccc;
 }
@@ -1451,9 +1469,33 @@ input[type="submit"]:focus-visible {
 	display: none;
 }
 
-/* media query block */
+.search {
+	text-align: center;
+	display: none;
+	border: 1px solid #000;
+	width: 590px;
+	height: 35px;
+	margin: auto;
+	margin-bottom: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+}
 
+input[type="search"]:focus-visible {
+	outline: none;
+}
+
+.validation {
+	text-align: center;
+	color: red;
+}
+
+/* media query block */
 @media screen and (max-width: 650px) {
+	.search_hide {
+		display: none;
+	}
+
 	.check-box,
 	.fa-bars {
 		display: block;
