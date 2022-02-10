@@ -2,8 +2,7 @@ const cartCount = document.querySelector(".item_count");
 const navbar = document.querySelector(".navbar");
 const BottomToTop = document.querySelector(".bottom_to_top");
 const sticky = navbar.offsetTop;
-const hiddenSearch = document.getElementById("hidden");
-const search = document.getElementsByClassName("search_hide")[1];
+const search = document.getElementsByClassName("search_hide")[0];
 const searchInput = document.getElementsByClassName("search")[0];
 const sectionPartition = document.querySelectorAll(
 	".sections .section_parition .fa-shopping-cart"
@@ -61,12 +60,7 @@ window.onscroll = () => {
 };
 
 // todo: enable the search on click
-search.addEventListener("click", () => {
-	searchInput.style.display = "flex";
-});
-hiddenSearch.onclick = () => {
-	searchInput.style.display = "flex";
-};
+search.onclick = () => (searchInput.style.display = "flex");
 
 // todo: increase the count of cart on click of cart icon
 sectionPartition.forEach(
@@ -80,3 +74,6 @@ sectionPartition.forEach(
 			// 	section.parentElement.parentElement.parentElement.parentElement.innerText.trim();
 		})
 );
+
+// todo: scroll to the top
+BottomToTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });

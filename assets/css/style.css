@@ -50,15 +50,27 @@
 	background-color: white;
 }
 
+.sm-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .fa-search {
-	font-size: 16px;
+	font-size: 18px;
 	text-decoration: none;
 	color: black;
 }
 
+.search_hide {
+	padding-right: 20px;
+	border: none;
+	background: 0 0;
+}
+
 .navbar .shopping_cart_items {
 	position: relative;
-	font-size: 16px;
+	font-size: 18px;
 	text-decoration: none;
 	color: black;
 }
@@ -67,12 +79,12 @@
 	position: absolute;
 	color: white;
 	background-color: #cf2226;
-	border-radius: 8px;
+	border-radius: 50%;
 	width: 14px;
 	height: 13px;
-	left: 28px;
+	left: 70%;
 	text-align: center;
-	bottom: 22px;
+	bottom: 50%;
 	font-weight: 900;
 	font-size: 10px;
 	line-height: 13px;
@@ -213,6 +225,7 @@
 	line-height: 30px;
 	color: #252525;
 	font-weight: 700;
+	margin-right: auto;
 	font-family: "Playfair Display";
 }
 
@@ -221,7 +234,6 @@
 	font-size: 14px;
 	font-family: "Lato";
 	font-weight: 400;
-	padding-top: 8px;
 }
 
 .navbar .action_link a {
@@ -1422,7 +1434,7 @@ input[type="submit"]:focus-visible {
 	color: white;
 	bottom: 0;
 	left: 50%;
-	z-index: 9;
+	z-index: 50;
 	border: none;
 	transform: translateX(-50%);
 	background-color: black;
@@ -1465,8 +1477,7 @@ input[type="submit"]:focus-visible {
 }
 
 .check-box,
-.fa-bars,
-.sm-links {
+.fa-bars {
 	display: none;
 }
 
@@ -1582,7 +1593,7 @@ input[type="search"]:focus-visible {
 	}
 
 	.center {
-		padding-left: 100px;
+		padding-left: 118px;
 	}
 
 	.navbar .action_link {
@@ -1968,6 +1979,7 @@ input[type="search"]:focus-visible {
 		line-height: 24px;
 		color: #252525;
 		font-weight: 700;
+		margin-right: 0%;
 		font-family: "Playfair Display";
 	}
 
