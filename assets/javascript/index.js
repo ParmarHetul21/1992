@@ -1,12 +1,13 @@
+const cartCount = document.querySelector(".item_count");
 const navbar = document.querySelector(".navbar");
 const BottomToTop = document.querySelector(".bottom_to_top");
 const sticky = navbar.offsetTop;
-const search = document.getElementsByClassName("search_hide")[0];
+const hiddenSearch = document.getElementById("hidden");
+const search = document.getElementsByClassName("search_hide")[1];
 const searchInput = document.getElementsByClassName("search")[0];
 const sectionPartition = document.querySelectorAll(
 	".sections .section_parition .fa-shopping-cart"
 );
-const cartCount = document.querySelector(".item_count");
 const coverImage = document.getElementsByClassName("img_container")[0];
 const left = document.getElementsByClassName("ltr")[0];
 const right = document.getElementsByClassName("rtl")[0];
@@ -60,13 +61,20 @@ window.onscroll = () => {
 };
 
 // todo: enable the search on click
-search.onclick = () => (searchInput.style.display = "block");
+search.addEventListener("click", () => {
+	searchInput.style.display = "flex";
+});
+hiddenSearch.onclick = () => {
+	searchInput.style.display = "flex";
+};
 
 // todo: increase the count of cart on click of cart icon
 sectionPartition.forEach(
 	(section) =>
 		(section.onclick = () => {
-			cartCount.innerHTML = parseInt(cartCount.innerText) + 1;
+			console.log(cartCount);
+			cartCount.textContent = parseInt(cartCount.textContent) + 1;
+			console.log(cartCount.innerHTML);
 			// const imageURL = section.parentElement.parentElement.parentElement;
 			// let data =
 			// 	section.parentElement.parentElement.parentElement.parentElement.innerText.trim();
