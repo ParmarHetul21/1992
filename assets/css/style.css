@@ -71,8 +71,9 @@
 .navbar .shopping_cart_items {
 	position: relative;
 	font-size: 18px;
-	text-decoration: none;
 	color: black;
+	border: none;
+	background: 0, 0;
 }
 
 .navbar .shopping_cart_items .item_count {
@@ -88,6 +89,81 @@
 	font-weight: 900;
 	font-size: 10px;
 	line-height: 13px;
+}
+
+.cart-items {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	left: 64%;
+	top: 90%;
+	z-index: 10;
+	width: 270px;
+	height: 340px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+}
+
+.cart-items .cart-list {
+	min-height: 260px;
+	max-height: 260px;
+	overflow: scroll;
+}
+
+.show {
+	display: flex;
+}
+
+.cart-items .cart-one {
+	display: flex;
+	flex-direction: row;
+	column-gap: 2px;
+	justify-content: center;
+	width: 100%;
+	padding-left: 33px;
+	padding-top: 20px;
+	gap: 24px;
+}
+
+.cart-items .cart-one ul {
+	list-style: none;
+	width: 180px;
+	height: 55px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.cart-items .card-black {
+	display: flex;
+	border: none;
+	background-color: black;
+	width: 270px;
+	height: 80px;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.cart-items .card-black .total {
+	font-size: 12px;
+	line-height: 30px;
+	color: #959595;
+	font-weight: 700;
+}
+
+.cart-items .card-black .check-out {
+	font-size: 14px;
+	line-height: 30px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Lato";
+	text-align: right;
 }
 
 .header_announcment_right {
@@ -201,6 +277,7 @@
 	justify-content: space-between;
 	font-size: 14px;
 	padding-bottom: 10px;
+	position: relative;
 }
 
 .link_rm {
@@ -265,7 +342,7 @@
 	content: "";
 	display: block;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.4;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -524,11 +601,12 @@ iframe {
 
 .sections {
 	position: relative;
-	padding-inline: 20%;
+	margin-inline: 20%;
 	padding-top: 25px;
 	display: flex;
-	justify-content: space-between;
 	gap: 10px;
+	overflow: scroll;
+	width: 60%;
 }
 
 .sections .section_img {
@@ -545,46 +623,51 @@ iframe {
 }
 
 .sections .img1 {
-	background-image: url("../images/black-hooded.jpeg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: fill;
 }
 
 .sections .img2 {
 	background-image: url("../images/fine-cardigan.jpeg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: fill;
 }
 
 .sections .img3 {
 	background-image: url("../images/light-pink-parka.jpeg");
-	background-size: 120%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: fill;
 }
 
 .sections .img4 {
 	background-image: url("../images/denim-dress.jpeg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: fill;
 }
 
 .sections .img5 {
 	background-image: url("../images/NYC.jpeg");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: cover;
 }
 
 .sections .img6 {
 	background-image: url("../images/batmen-tshirts.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: cover;
 }
 
 .sections .img7 {
 	background-image: url("../images/denim-shorts.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: cover;
 }
 
 .sections .section_title {
@@ -603,10 +686,11 @@ iframe {
 }
 
 .sections .section_parition {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	text-align: center;
-	width: 100%;
+	min-width: 25%;
+	transition: 0.2s;
 }
 
 .sections .section_parition .section_info {
@@ -650,7 +734,7 @@ iframe {
 	opacity: 1;
 }
 
-.section_parition .section_img .editor {
+.section_parition .section_img .editor-choice {
 	position: absolute;
 	bottom: 0%;
 	padding: 5px 5px;
@@ -659,6 +743,7 @@ iframe {
 	font-size: 10px;
 	color: #ffffff;
 	font-weight: 500;
+	z-index: 10;
 }
 
 .section_parition .section_img .exclusive {
@@ -670,6 +755,7 @@ iframe {
 	font-size: 10px;
 	color: #ffffff;
 	font-weight: 500;
+	z-index: 10;
 }
 
 .section_parition .section_img .sales_off {
@@ -684,6 +770,7 @@ iframe {
 	font-size: 10px;
 	color: #ffffff;
 	font-weight: 500;
+	z-index: 10;
 }
 
 .section_parition .section_img .new {
@@ -695,6 +782,12 @@ iframe {
 	font-size: 10px;
 	color: #ffffff;
 	font-weight: 500;
+	z-index: 10;
+}
+
+.sections::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
 }
 
 .sections .section_parition .section_img .actions_hide {
@@ -992,6 +1085,7 @@ iframe {
 	background-image: url("../images/black-hooded.jpeg");
 	background-size: cover;
 	background-position: center;
+	object-fit: cover;
 }
 
 .card2 {
@@ -1590,6 +1684,7 @@ input[type="search"]:focus-visible {
 		align-items: stretch;
 		padding-top: 20px;
 		padding-inline: 0%;
+		z-index: 20;
 	}
 
 	.center {
@@ -1658,16 +1753,6 @@ input[type="search"]:focus-visible {
 		justify-content: center;
 		align-items: center;
 		margin-top: 10px;
-	}
-
-	.img_container::before {
-		content: "";
-		display: block;
-		background-color: black;
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		opacity: 0.6;
 	}
 
 	.img_container .ltr {
@@ -1764,7 +1849,6 @@ input[type="search"]:focus-visible {
 	.sections {
 		display: flex;
 		flex-direction: column;
-		padding-inline: 10%;
 		padding-top: 15px;
 		justify-content: space-between;
 		gap: 5px;
