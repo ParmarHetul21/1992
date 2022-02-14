@@ -67,15 +67,15 @@ const hotProductJSON = [
 	{
 		image: "./assets/images/black-hooded.jpeg",
 		name: "HOODED JACKET",
-		new_price: "29.90",
+		new_price: 29.9,
 		star: 4.5,
 		hover_image: "./assets/images/hover-detail.png"
 	},
 	{
 		image: "./assets/images/NYC.jpeg",
 		name: "N.Y.C SWEATSHIRT",
-		old_price: "35.90",
-		new_price: "14.90",
+		old_price: 35.9,
+		new_price: 14.9,
 		tag: "sales_off",
 		star: 4,
 		hover_image: "./assets/images/hover-detail.png"
@@ -83,7 +83,7 @@ const hotProductJSON = [
 	{
 		image: "./assets/images/batmen-tshirts.jpeg",
 		name: "BATMEN T-SHIRT",
-		new_price: "35.90",
+		new_price: 35.9,
 		tag: "new",
 		star: 4,
 		hover_image: "./assets/images/hover-detail.png"
@@ -91,14 +91,14 @@ const hotProductJSON = [
 	{
 		image: "./assets/images/denim-shorts.jpeg",
 		name: "DENIM SHORTS",
-		new_price: "39.90",
+		new_price: 39.9,
 		star: 3.5,
 		hover_image: "./assets/images/hover-detail.png"
 	},
 	{
 		image: "./assets/images/fine-cardigan.jpeg",
 		name: "FINE-KNIT CARDIGAN",
-		new_price: "19.90",
+		new_price: 19.9,
 		star: 4,
 		hover_image: "./assets/images/hover-detail.png"
 	}
@@ -121,7 +121,7 @@ const addToCart = (product) => {
 	let priceLi = document.createElement("li");
 	nameLi.textContent = product.name;
 	priceLi.textContent = product.new_price;
-	grandTotal.textContent = `$ ${(product.new_price += product.new_price)}`;
+	grandTotal.textContent = `$ ${product.new_price}`;
 	ul.append(nameLi, priceLi);
 	cartOne.append(img, ul);
 	cardList.appendChild(cartOne);
@@ -236,7 +236,6 @@ hotProductJSON.forEach((product) => {
 	// todo: increase the count of cart on click of cart icon
 	cart.onclick = () => {
 		cartCount.textContent = parseInt(cartCount.textContent) + 1;
-		cartToShow.push(product);
 		addToCart(product);
 	};
 	heart.classList.add("far", "fa-heart");
