@@ -99,19 +99,34 @@
 	top: 90%;
 	z-index: 10;
 	width: 270px;
-	height: 340px;
 	background-color: #ffffff;
 	border: 1px solid #000000;
+	z-index: 10;
+}
+
+.cart-list::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
 }
 
 .cart-items .cart-list {
-	min-height: 260px;
-	max-height: 260px;
-	overflow: scroll;
+	max-height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.cart-items .cart-list:empty::after {
+	content: "Your cart is empty";
+	display: flex;
+	justify-content: center;
 }
 
 .show {
-	display: flex;
+	display: flex !important;
+}
+
+.hidden {
+	display: none;
 }
 
 .cart-items .cart-one {
@@ -120,7 +135,7 @@
 	column-gap: 2px;
 	justify-content: center;
 	width: 100%;
-	padding-left: 33px;
+	padding-left: 17px;
 	padding-top: 20px;
 	gap: 24px;
 }
@@ -145,12 +160,17 @@
 	border: none;
 	background-color: black;
 	width: 270px;
-	height: 80px;
+	height: 40px;
 	justify-content: space-around;
 	align-items: flex-end;
 }
 
 .cart-items .card-black .total {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
 	font-size: 12px;
 	line-height: 30px;
 	color: #959595;
@@ -1397,6 +1417,7 @@ footer .charges .charges_returns {
 }
 
 .footer_info .left_side .input_data {
+	position: relative;
 	margin: 40px 0px;
 }
 
@@ -1576,8 +1597,8 @@ input[type="submit"]:focus-visible {
 }
 
 .search {
-	text-align: center;
 	display: none;
+	text-align: center;
 	border: 1px solid #000;
 	width: 590px;
 	height: 35px;
@@ -1589,6 +1610,11 @@ input[type="submit"]:focus-visible {
 
 input[type="search"]:focus-visible {
 	outline: none;
+}
+
+.message {
+	position: absolute;
+	top: 100%;
 }
 
 .validation {

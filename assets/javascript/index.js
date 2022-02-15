@@ -19,6 +19,7 @@ const cartElement = document.querySelector(".cart-items");
 const cardList = document.querySelector(".cart-list");
 const grandTotal = document.querySelector(".grandTotal");
 var idx = 1;
+
 // todo: New products
 const newProductJSON = [
 	{
@@ -109,6 +110,7 @@ add_item_cart.onclick = (e) => {
 	cartElement.classList.toggle("show");
 };
 
+// todo: adding the data into the cart
 const addToCart = (product) => {
 	let cartOne = document.createElement("div");
 	cartOne.classList.add("cart-one");
@@ -119,10 +121,12 @@ const addToCart = (product) => {
 	let ul = document.createElement("ul");
 	let nameLi = document.createElement("li");
 	let priceLi = document.createElement("li");
+	let deleteLi = document.createElement("li");
 	nameLi.textContent = product.name;
 	priceLi.textContent = product.new_price;
+	deleteLi.classList.add("fas", "fa-trash");
 	grandTotal.textContent = `$ ${product.new_price}`;
-	ul.append(nameLi, priceLi);
+	ul.append(nameLi, priceLi, deleteLi);
 	cartOne.append(img, ul);
 	cardList.appendChild(cartOne);
 };
@@ -293,23 +297,24 @@ hotProductJSON.forEach((product) => {
 
 // todo: email validation in newsletter
 onEmailSubmit.onclick = () => {
-	const div = document.createElement("div");
-	if (inputEmail.value === "") {
-		div.innerText = "Input is empty";
-		div.classList.add("validation");
-		newsLetter.appendChild(div);
-	} else if (!regex.test(inputEmail.value)) {
-		div.innerText = "Email is not valid";
-		div.classList.add("validation");
-		newsLetter.appendChild(div);
+	let message = document.querySelector(".message");
+	if (!regex.test(inputEmail.value)) {
+		message.innerHTML = "please input properly";
+		message.classList.add("validation");
 	} else {
-		div.innerText = "Email is valid";
-		div.classList.add("validation");
-		newsLetter.appendChild(div);
+		message.style.display = "none";
 	}
 };
 
 // todo: top banner sliders
+
+(() => {
+	setInterval(() => {
+		if (idx === 4) idx = 1;
+		else idx += 1;
+		coverImage.style.backgroundImage = `url(./assets/images/cover${idx}.jpg)`;
+	}, 2000);
+})();
 left.onclick = () => {
 	if (idx === 1) idx = 4;
 	else idx -= 1;
@@ -327,7 +332,6 @@ window.onscroll = () => {
 	if (window.pageYOffset > sticky) {
 		navbar.classList.add("fixed-header");
 		BottomToTop.style.display = "block";
-		searchInput.style.display = "none";
 	} else {
 		navbar.classList.remove("fixed-header");
 		BottomToTop.style.display = "none";
@@ -335,7 +339,9 @@ window.onscroll = () => {
 };
 
 // todo: enable the search on click
-search.onclick = () => (searchInput.style.display = "flex");
+search.onclick = () => {
+	searchInput.classList.toggle("show");
+};
 
 // todo: scroll to the top
 BottomToTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
